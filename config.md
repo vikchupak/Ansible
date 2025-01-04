@@ -15,6 +15,11 @@ User-specific
 ~/.ansible.cfg
 ```
 
+Project-specific
+```
+./ansible.cfg
+```
+
 Common settings example
 ```ini
 [defaults]
