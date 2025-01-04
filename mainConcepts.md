@@ -204,3 +204,14 @@ ansible-playbook -i inventory/hosts site.yml
       - import_playbook: web_servers.yml
       - import_playbook: db_servers.yml
       ```
+
+# Ad Hoc Tasks
+
+Ad hoc is a Latin phrase that means "for this purpose" or "for a specific task."
+
+In Ansible Context, an ad hoc task is a task that is executed immediately and directly, often without the need to write a full playbook.
+
+Run Ad Hoc task using ping module
+```bash
+ansible all -m ping
+```
