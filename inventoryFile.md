@@ -6,6 +6,7 @@
 [webservers:vars]
 ansible_ssh_private_key=~/.ssh/id_rsa
 ansible_user=root
+ansible_python_interpreter=/usr/bin/python3.9
 
 192.168.1.20 # single host
 ```
@@ -22,3 +23,6 @@ ansible webservers -i ./hosts -m ping
 - `webservers` - host group
 - `-i ./hosts` - specifies the custom inventory file to use
 - `-m ping` - uses the ping ansible module to test connectivity
+
+On target servers must be installed python. And we can specify path to it.
+![image](https://github.com/user-attachments/assets/9260d59d-3b49-4cc6-abe0-79cdbe8d2817)
