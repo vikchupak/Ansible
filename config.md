@@ -2,6 +2,9 @@
 
 In new ansible versions, these folders/files are not created when installing. So we have to create them yourselves.
 
+Official doc for settings
+- https://docs.ansible.com/ansible/latest/reference_appendices/config.html
+
 System-wide default
 ```
 /etc/ansible/ansible.cfg
@@ -9,7 +12,7 @@ System-wide default
 
 User-specific
 ```
-~/.ansible/ansible.cfg
+~/.ansible.cfg
 ```
 
 Common settings example
