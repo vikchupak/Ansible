@@ -107,3 +107,24 @@ Here, `community.general.s3` is a module from the `community.general` collection
 - **Modules** are the fundamental units that execute specific tasks, and they can be part of larger content distributions called **collections**.
 - **Collections** are a way to group related content (modules, roles, plugins) and provide a more scalable and reusable method of managing Ansible resources.
 - **Modules** are executed directly in playbooks, while **collections** provide the structure for distributing and using many modules and other content.
+
+# Ansible galaxy
+
+- https://galaxy.ansible.com/ui/
+
+Ansible Galaxy is a **community hub and repository** where you can find, download, and share Ansible content like roles, collections, and plugins.
+
+`ansible-galaxy` is a **command-line tool** that comes with Ansible, used to manage Ansible content from Ansible Galaxy.
+
+### **Common `ansible-galaxy` Commands**
+
+| Command                                   | Description                                                        |
+|-------------------------------------------|--------------------------------------------------------------------|
+| `ansible-galaxy install <role_name>`      | Install a role from Ansible Galaxy or a custom source.             |
+| `ansible-galaxy collection install <name>`| Install a collection from Galaxy or a custom source.               |
+| `ansible-galaxy list`                     | List all installed roles or collections.                          |
+| `ansible-galaxy init <role_name>`         | Create a new role structure in the current directory.              |
+| `ansible-galaxy search <query>`           | Search for roles or collections on Ansible Galaxy.                |
+| `ansible-galaxy remove <role_name>`       | Remove an installed role.                                         |
+| `ansible-galaxy collection list`          | List installed collections.                                        |
+| `ansible-galaxy collection install -r requirements.yml` | Install collections from a requirements file.         |
