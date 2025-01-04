@@ -159,3 +159,9 @@ ansible-playbook -i inventory/hosts site.yml
 | **Task**     | Uses a module to define a single action.      | `Install Apache using apt`                    |
 | **Play**     | Groups tasks and maps them to hosts.          | `Configure web_servers`                       |
 | **Playbook** | Orchestrates multiple plays to define the entire workflow. | `site.yml` with tasks for web and database servers |
+
+# Sequence/Order
+
+- Within a Playbook, plays are executed sequentially in the order they are defined in the playbook.
+- Within a Play, tasks are executed sequentially, in the order they are defined in the play.
+- Each task is applied to all hosts in the play **in parallel across hosts**, and Ansible waits for all hosts to complete the task before moving to the next task.
