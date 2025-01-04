@@ -121,7 +121,7 @@ Ansible Galaxy is a **community hub and repository** where you can find, downloa
 | Command                                   | Description                                                        |
 |-------------------------------------------|--------------------------------------------------------------------|
 | `ansible-galaxy install <role_name>`      | Install a role from Ansible Galaxy or a custom source.             |
-| `ansible-galaxy collection install <name>`| Install a collection from Galaxy or a custom source.               |
+| `ansible-galaxy collection install <name> [--upgrade]`| Install a collection from Galaxy or a custom source.               |
 | `ansible-galaxy list`                     | List all installed roles or collections.                          |
 | `ansible-galaxy init <role_name>`         | Create a new role structure in the current directory.              |
 | `ansible-galaxy search <query>`           | Search for roles or collections on Ansible Galaxy.                |
