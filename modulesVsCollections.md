@@ -16,6 +16,8 @@ Every module and plugin is part of a collection
 - `<namespace>.<collection>.<module>`
 - `<namespace>.<collection>.<plugin>`
 
+So, we can ref to module/plugin using `module/plugin name` or `Fully Qualified Collection Name (FQCN)` - to specify exact source of module/plugin to avoid name conflicts, like `ansible.builtin.shell` and `community.general.shell`.
+
 ---
 
 ### **Modules**
