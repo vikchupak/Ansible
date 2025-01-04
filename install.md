@@ -16,7 +16,10 @@ You need Python to run and install Ansible. Ansible is written in Python and req
 
    Will use already installed system-wide python version https://github.com/VIK2395/Python/blob/main/version_management.md
 
-## Using python
+## Using python (recommended)
+
+Official doc
+- https://docs.ansible.com/ansible/latest/getting_started/get_started_ansible.html
 
 After installing python
 
