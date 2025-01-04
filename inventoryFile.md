@@ -1,5 +1,5 @@
 ```ini
-[webservers]
+[webservers] # host group
 192.168.1.10
 192.168.1.11
 
@@ -7,8 +7,7 @@
 ansible_ssh_private_key=~/.ssh/id_rsa
 ansible_user=root
 
-[databases]
-192.168.1.20
+192.168.1.20 # single host
 ```
 
 The default location of the Ansible inventory file, **commonly referred to as the "hosts file"**, is:
