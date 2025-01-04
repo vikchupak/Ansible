@@ -160,8 +160,47 @@ ansible-playbook -i inventory/hosts site.yml
 | **Play**     | Groups tasks and maps them to hosts.          | `Configure web_servers`                       |
 | **Playbook** | Orchestrates multiple plays to define the entire workflow. | `site.yml` with tasks for web and database servers |
 
-# Sequence/Order
+# Sequence/Order of execution
 
 - Within a Playbook, plays are executed sequentially in the order they are defined in the playbook.
 - Within a Play, tasks are executed sequentially, in the order they are defined in the play.
 - Each task is applied to all hosts in the play **in parallel across hosts**, and Ansible waits for all hosts to complete the task before moving to the next task.
+
+# Files
+
+- In Ansible, there is no separate file for individual plays. Plays are always part of a playbook, which groups them together.
+- A playbook must have at least one play, and plays define which tasks to run.
+- You can organize your tasks into separate task files and reuse them across multiple playbooks or plays using `include_tasks` or `import_tasks`.
+  - But, tasks in Ansible cannot be run on their own outside of a playbook or a role.
+- If you need to separate the plays into different files for organizational purposes, you can use `import_playbook`, which allows you to combine multiple playbooks, but this does not allow you to include individual plays.
+
+  - `web_servers.yml`:
+      ```yaml
+      ---
+      - name: Configure web servers
+        hosts: web_servers
+        tasks:
+          - name: Install Apache
+            apt:
+              name: apache2
+              state: present
+      ```
+  
+  - `db_servers.yml`:
+      ```yaml
+      ---
+      - name: Configure database servers
+        hosts: db_servers
+        tasks:
+          - name: Install PostgreSQL
+            apt:
+              name: postgresql
+              state: present
+      ```
+  
+  - Main Playbook: `site.yml`
+      ```yaml
+      ---
+      - import_playbook: web_servers.yml
+      - import_playbook: db_servers.yml
+      ```
