@@ -11,6 +11,11 @@ Modules doc
 Plugins doc
 - https://docs.ansible.com/ansible/latest/collections/all_plugins.html
 
+
+Every module and plugin is part of a collection
+- `<namespace>.<collection>.<module>`
+- `<namespace>.<collection>.<plugin>`
+
 ---
 
 ### **Modules**
