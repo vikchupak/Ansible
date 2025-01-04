@@ -21,3 +21,28 @@ pip install ansible
 ```bash
 pip freeze > requirements.txt
 ```
+
+# Example of 'good' project structure
+
+```
+ansible-project/
+├── ansible.cfg
+├── inventory/
+│   ├── hosts
+├── playbooks/
+│   ├── site.yml
+├── group_vars/
+│   ├── web_servers.yml
+├── roles/
+│   ├── apache/
+│       ├── tasks/
+│       │   ├── main.yml
+│       ├── templates/
+│       │   ├── index.html.j2
+│       ├── vars/
+│       │   ├── main.yml
+│       ├── defaults/
+│       │   ├── main.yml
+│       ├── handlers/
+│       │   ├── main.yml
+```
