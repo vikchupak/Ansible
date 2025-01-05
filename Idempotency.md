@@ -55,6 +55,8 @@ For example:
 2. **Avoid `command` and `shell` Modules**:  
    If you must use them, ensure you add checks to make them idempotent.
 
+   https://gitlab.com/twn-devops-bootcamp/latest/15-ansible/ansible-projects/-/blob/main/deploy-nexus.yaml?ref_type=heads#L29
+
    Example:
    ```yaml
    - name: Create a directory if it doesn't exist (idempotent shell)
@@ -64,7 +66,7 @@ For example:
        fi
    ```
 
-3. **Use Conditional Logic (`when`)**:  
+4. **Use Conditional Logic (`when`)**:  
    Prevent tasks from running unnecessarily.
    ```yaml
    - name: Restart Apache if configuration changed
@@ -74,10 +76,10 @@ For example:
      when: apache_config_changed
    ```
 
-4. **Use Handlers**:  
+5. **Use Handlers**:  
    Trigger actions (like restarting services) only when necessary changes occur.
 
-5. **Test Playbooks**:  
+6. **Test Playbooks**:  
    Run playbooks multiple times to confirm idempotency and debug tasks that apply changes unnecessarily.
 
 ---
