@@ -7,3 +7,8 @@ Run Ad Hoc task using ping module
 ```bash
 ansible all -m ping
 ```
+
+Install collection
+```bash
+ansible-galaxy collection install <collection>
+```
