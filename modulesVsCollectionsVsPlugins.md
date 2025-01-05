@@ -11,36 +11,6 @@ In Ansible, both **modules** and **collections** are essential concepts, but the
 ## Plugins doc
 - https://docs.ansible.com/ansible/latest/collections/all_plugins.html
 
-  `env` plugin to read env vars
-  - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/env_lookup.html
-
-  The `ansible_env` variable provides access to the environment variables of the **remote host**.
-
-Writing a Custom Lookup Plugin for `env`
-
-File: lookup_plugins/custom_env.py
-```python
-from ansible.plugins.lookup import LookupBase
-import os
-
-class LookupModule(LookupBase):
-    def run(self, terms, variables=None, **kwargs):
-        result = []
-        for term in terms:
-            # Fetch the environment variable or return a default value
-            value = os.getenv(term, kwargs.get('default', None))
-            result.append(value)
-        return result
-```
-Usage
-```yaml
-- name: Use a custom env lookup
-  hosts: localhost
-  tasks:
-    - debug:
-        msg: "Custom HOME is {{ lookup('custom_env', 'HOME', default='/default/home') }}"
-```
-
 ---
 
 Every module and plugin is part of a collection
