@@ -1,3 +1,5 @@
+- https://docs.ansible.com/ansible/latest/collections/ansible/builtin/env_lookup.html
+
 **Ansible plugins** are typically written in **Python**. Ansible is built in Python, and the majority of its core components (including plugins) are also written in Python. This allows for easy integration and extensibility within Ansible.
 
 There are several types of plugins, and they are all written in Python. Here's a breakdown of the most common types of plugins in Ansible and their typical usage:
