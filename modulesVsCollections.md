@@ -2,15 +2,21 @@
 
 In Ansible, both **modules** and **collections** are essential concepts, but they serve different purposes in how tasks and resources are organized and reused. Here's a breakdown of their differences and how they relate to each other.
 
-Collections doc
+## Collections doc
 - https://docs.ansible.com/ansible/latest/collections/index.html
 
-Modules doc
+## Modules doc
 - https://docs.ansible.com/ansible/latest/collections/index_module.html
 
-Plugins doc
+## Plugins doc
 - https://docs.ansible.com/ansible/latest/collections/all_plugins.html
 
+  `env` plugin to read env vars
+  - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/env_lookup.html
+
+  The `ansible_env` variable provides access to the environment variables of the **remote host**.
+
+---
 
 Every module and plugin is part of a collection
 - `<namespace>.<collection>.<module>`
