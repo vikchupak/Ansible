@@ -43,7 +43,7 @@ Use inventory plugin to run ansible playbook against ec2 dynamic `aws_ec2` hosts
 ansible-playbook -i inventory_aws_ec2.yaml ansible_plabook.yaml
 ```
 
-We can set plugin inventory file as default in `ansible.cfg` file to not set `-i inventory_aws_ec2.yaml` in `ansible-playbook` command
+We can set plugin inventory file as default in `ansible.cfg` file to not set `-i inventory_aws_ec2.yaml` in `ansible-playbook` command8 every time
 ```ini
 inventory = inventory_aws_ec2.yaml
 ```
