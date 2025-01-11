@@ -31,6 +31,11 @@ and create plugin config file `inventory_aws_ec2.yaml`. It must end with `aws_ec
 plugin: aws_ec2
 regions: 
   - eu-central-1
+filters: # to filter result
+  tag:Name: dev*
+# keyd_groups: # to filter into groups
+#   - key: tags
+#     prefix: tag
 ```
 
 Use plugin to get all EC2's metadata under `aws_ec2` hosts group
@@ -43,7 +48,7 @@ Use inventory plugin to run ansible playbook against ec2 dynamic `aws_ec2` hosts
 ansible-playbook -i inventory_aws_ec2.yaml ansible_plabook.yaml
 ```
 
-We can set plugin inventory file as default in `ansible.cfg` file to not set `-i inventory_aws_ec2.yaml` in `ansible-playbook` command8 every time
+We can set plugin inventory file as default in `ansible.cfg` file to not set `-i inventory_aws_ec2.yaml` in `ansible-playbook` command every time
 ```ini
 inventory = inventory_aws_ec2.yaml
 ```
