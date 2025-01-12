@@ -22,6 +22,7 @@ Official doc
 - https://docs.ansible.com/ansible/latest/getting_started/get_started_ansible.html
 
 After installing python
+- https://github.com/VIK2395/Python/blob/main/install.md
 
 ```bash
 pip3 install ansible
