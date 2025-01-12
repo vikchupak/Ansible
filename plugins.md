@@ -28,6 +28,13 @@ Usage
         msg: "Custom HOME is {{ lookup('custom_env', 'HOME', default='/default/home') }}"
 ```
 
+---
+
+One more example of plugin usage (dynamic inventory)
+- https://github.com/VIK2395/Ansible/blob/main/inventory/dynamicInventory.md
+
+---
+
 **Ansible plugins** are typically written in **Python**. Ansible is built in Python, and the majority of its core components (including plugins) are also written in Python. This allows for easy integration and extensibility within Ansible.
 
 There are several types of plugins, and they are all written in Python. Here's a breakdown of the most common types of plugins in Ansible and their typical usage:
