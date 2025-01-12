@@ -1,8 +1,14 @@
-# modules, tasks, plays, playbooks
+<details>
+<summary>
+  <strong>
+    modules, tasks, plays, playbooks
+  </strong> 
+</summary>
+<br />
 
 In Ansible, **modules**, **tasks**, **plays**, and **playbooks** are key concepts used to define and execute automation workflows. Here's a detailed explanation of each:
 
----
+-----
 
 ### **1. Modules**
 - **Definition**: Modules are standalone units of code that perform specific tasks. They are the building blocks of Ansible automation.
@@ -160,13 +166,29 @@ ansible-playbook -i inventory/hosts site.yml
 | **Play**     | Groups tasks and maps them to hosts.          | `Configure web_servers`                       |
 | **Playbook** | Orchestrates multiple plays to define the entire workflow. | `site.yml` with tasks for web and database servers |
 
-# Sequence/Order of execution
+</details>
+
+<details>
+<summary>
+  <strong>
+    Sequence/Order of execution
+  </strong> 
+</summary>
+<br />
 
 - Within a Playbook, plays are executed sequentially in the order they are defined in the playbook.
 - Within a Play, tasks are executed sequentially, in the order they are defined in the play.
 - Each task is applied to all hosts in the play **in parallel across hosts**, and Ansible waits for all hosts to complete the task before moving to the next task.
 
-# Files
+</details>
+
+<details>
+<summary>
+  <strong>
+    Files
+  </strong> 
+</summary>
+<br />
 
 - In Ansible, there is no separate file for individual plays. Plays are always part of a playbook, which groups them together.
 - A playbook must have at least one play, and plays define which tasks to run.
@@ -205,7 +227,15 @@ ansible-playbook -i inventory/hosts site.yml
       - import_playbook: db_servers.yml
       ```
 
-# Ad Hoc Tasks
+</details>
+
+<details>
+<summary>
+  <strong>
+    Ad Hoc Tasks
+  </strong> 
+</summary>
+<br />
 
 Ad hoc is a Latin phrase that means "for this purpose" or "for a specific task."
 
@@ -215,3 +245,5 @@ Run Ad Hoc task using ping module
 ```bash
 ansible all -m ping
 ```
+
+</details>
