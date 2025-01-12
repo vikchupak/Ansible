@@ -1,7 +1,8 @@
 # Roles
 
 - Like a package/bundle of your **tasks**
-- Only for tasks and **its files**(like static files, variables for tasks, custom modules). So the roles are packaged to contain everything they need.
+- Only for tasks and **its files**(like static files, variables for tasks, custom modules).
+  - So the roles are packaged to contain everything they need.
 - Extract tasks from different plays to reuse them in different playbooks/plays.
 - **Roles have standard defined structure**
 - Use existing Roles from community
