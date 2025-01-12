@@ -29,10 +29,12 @@ ansible-project/
 ├── ansible.cfg
 ├── inventory/
 │   ├── hosts
+│   ├── group_vars/
+│       ├── web_servers.yml
+│   ├── host_vars/
+│       ├── host1.yml
 ├── playbooks/
 │   ├── site.yml
-├── group_vars/
-│   ├── web_servers.yml
 ├── roles/
 │   ├── apache/
 │       ├── tasks/
