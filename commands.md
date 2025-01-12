@@ -13,3 +13,8 @@ Install collection
 ```bash
 ansible-galaxy collection install <collection>
 ```
+
+Validate/preview inventory (file?)
+```bash
+ansible-inventory -i inventory_aws_ec2.yaml [--list|--graph]
+```
