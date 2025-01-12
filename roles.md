@@ -87,7 +87,8 @@ roles/
 
 ### **How to Create a Role**
 
-You can manually create the directory structure or use the **`ansible-galaxy init`** command to generate it automatically.
+- You can manually create the directory structure.
+- Use the **`ansible-galaxy init`** command to generate it automatically.
 
 #### **Command to Create a Role:**
 ```bash
