@@ -11,7 +11,7 @@
 
 ### Usage
 
-Just replace `tasks` attribute with `roles` attribute in a playbook's plays.
+Just replace `tasks` attribute with `roles` attribute or combine the both attributes in a playbook's plays.
 
 ### **Directory Structure of a Role**
 
