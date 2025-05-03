@@ -6,7 +6,7 @@
 [webservers:vars]
 ansible_ssh_private_key=~/.ssh/id_rsa
 ansible_user=root
-ansible_python_interpreter=/usr/bin/python3.9
+ansible_python_interpreter=/usr/bin/python3.9 # To explicitly set path to the interpreter as it may change 
 
 192.168.1.20 # single host
 ```
