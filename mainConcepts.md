@@ -27,6 +27,10 @@ In Ansible, **modules**, **tasks**, **plays**, and **playbooks** are key concept
       state: present
   ```
 
+**`Gather Facts` module:**
+- Is automatically added and executed at the beginning of every play
+- Collects info/vars about remote servers that can be used in playbooks
+
 ---
 
 ### **2. Tasks**
