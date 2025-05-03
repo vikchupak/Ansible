@@ -7,6 +7,6 @@ We should connect to target server as root user. Otherwise, we will face the fol
 
 ---
 
-- Use `become: true` WITHOUT `become_user` to escalate to root privileges. If set at the play level, it applies to all tasks in that play
 - **The playbook runs as ssh user by default**
+- `become: true` WITHOUT `become_user` always switches to root. If set at the play level, it applies to all tasks in that play
 - By using `become_user`, you ensure that the playbook runs as the specified user_name
