@@ -24,5 +24,5 @@ ansible webservers -i ./hosts -m ping
 - `-i ./hosts` - specifies the custom inventory file to use
 - `-m ping` - uses the ping ansible module to test connectivity
 
-On target servers must be installed python. And we can specify path to it with `ansible_python_interpreter` var inside inventory/hosts file to get rid of the following warning.
+Python must be installed on target servers. And we can specify path to it with `ansible_python_interpreter` var inside inventory/hosts file to get rid of the following warning.
 ![image](https://github.com/user-attachments/assets/9260d59d-3b49-4cc6-abe0-79cdbe8d2817)
