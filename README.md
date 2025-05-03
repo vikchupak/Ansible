@@ -11,5 +11,5 @@
 
 1. [Install](https://github.com/vikchupak/Ansible/blob/main/install.md) & [config files](https://github.com/vikchupak/Ansible/blob/main/configFiles.md)
 2. [Inventory file](https://github.com/vikchupak/Ansible/blob/main/inventory/inventoryFile.md)
-3. [Main concepts](https://github.com/vikchupak/Ansible/blob/main/mainConcepts.md) & [idempotency](https://github.com/vikchupak/Ansible/blob/main/Idempotency.md)
+3. [Main concepts and Ad Hoc Tasks](https://github.com/vikchupak/Ansible/blob/main/mainConcepts.md) & [idempotency](https://github.com/vikchupak/Ansible/blob/main/Idempotency.md)
 4. [Init project](https://github.com/vikchupak/Ansible/blob/main/initProject.md) & [example project](https://github.com/vikchupak/ansible_project/blob/main/README.md)
