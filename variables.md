@@ -16,3 +16,16 @@ Can be defined in:
   ansible-playbook -i hosts <playbook-name>.yaml --extra-vars "var1=value1 var2=value2"
   ```
 - Separate yaml file (any name) and use `vars_file` attribute in all the playbook's plays
+
+# Tricky case
+
+In yaml files, we need to use double quetes `""` to wrap variables that directly follow collums `:` in order to say that it is ansible ref var, not yaml dictionary.
+
+```yaml
+# Good
+src: "{{location}}/nodejs-app-{{version}}.tgz"
+src: /root/nodejs-app-{{version}}.tgz
+
+# Bad
+src: {{location}}/nodejs-app-{{version}}.tgz
+```
