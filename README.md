@@ -10,4 +10,4 @@
 ---
 
 1. [Install](https://github.com/vikchupak/Ansible/blob/main/install.md)
-2. Inventory
+2. [Inventory file](https://github.com/vikchupak/Ansible/blob/main/inventory/inventoryFile.md)
