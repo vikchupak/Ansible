@@ -6,6 +6,11 @@
 </summary>
 <br />
 
+- A task what we want to do
+- Module is used to perform the task
+- A play is a collection of tasks. There is no separate file for individual plays. Plays are always part of a playbook.
+- A Playbook is a collection of plays
+
 In Ansible, **modules**, **tasks**, **plays**, and **playbooks** are key concepts used to define and execute automation workflows. Here's a detailed explanation of each:
 
 -----
