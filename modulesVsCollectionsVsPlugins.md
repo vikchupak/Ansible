@@ -45,7 +45,7 @@ Here, `apt` is a module that installs a package (in this case, Apache). It takes
 
 ### **Collections**
 **Definition**:  
-A **collection** is a bundle or grouping of Ansible content, including modules, plugins, roles, playbooks, and documentation. Collections allow for easier distribution, versioning, and reuse of Ansible content.
+A **collection** is a bundle or grouping of Ansible content, including `modules, plugins, roles, playbooks, and documentation`. Collections allow for easier distribution, versioning, and reuse of Ansible content.
 
 **Key Characteristics**:
 - **Content Grouping**: A collection can contain many modules, plugins, roles, and even playbooks. Essentially, a collection is a package that encapsulates a set of related Ansible content.
