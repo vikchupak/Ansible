@@ -11,4 +11,4 @@
 
 1. [Install](https://github.com/vikchupak/Ansible/blob/main/install.md)
 2. [Inventory file](https://github.com/vikchupak/Ansible/blob/main/inventory/inventoryFile.md)
-3. [Main concepts](https://github.com/vikchupak/Ansible/blob/main/mainConcepts.md)
+3. [Main concepts](https://github.com/vikchupak/Ansible/blob/main/mainConcepts.md) & [idempotency](https://github.com/vikchupak/Ansible/blob/main/Idempotency.md)
