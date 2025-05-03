@@ -14,3 +14,4 @@
 3. [Main concepts and Ad Hoc Tasks](https://github.com/vikchupak/Ansible/blob/main/mainConcepts.md) & [idempotency](https://github.com/vikchupak/Ansible/blob/main/Idempotency.md) & [state](https://github.com/vikchupak/Ansible/blob/main/state.md)
 4. [Init project](https://github.com/vikchupak/Ansible/blob/main/initProject.md) & [example project](https://github.com/vikchupak/ansible_project/blob/main/README.md)
 5. [Collections and ansible-galaxy](https://github.com/vikchupak/Ansible/blob/main/modulesVsCollectionsVsPlugins.md)
+6. [async](https://github.com/vikchupak/Ansible/blob/main/async.md) & registered variables
