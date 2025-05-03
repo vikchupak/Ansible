@@ -17,6 +17,27 @@ Can be defined in:
   ```
 - Separate yaml file (any name) and use `vars_file` attribute in all the playbook's plays
 
+---
+
+In **Ansible**, variables can be defined in many places, and Ansible uses a **defined precedence order** (priority) to decide which value to use when the same variable is defined in multiple locations.
+
+Here is the **official variable precedence hierarchy** from **lowest to highest**:
+
+## Ansible Variable Precedence (Lowest to Highest)
+
+| Precedence | Source                                  | Notes                                                        |
+| ---------- | --------------------------------------- | ------------------------------------------------------------ |
+| 1️⃣        | **Role defaults** (`defaults/main.yml`) | Lowest priority — intended as fallback defaults inside roles |
+| 2️⃣        | **Inventory file variables**            | Defined in `inventory.ini` or YAML-based inventory           |
+| 3️⃣        | **Inventory group vars**                | `group_vars/all.yml`, `group_vars/webservers.yml`, etc.      |
+| 4️⃣        | **Inventory host vars**                 | `host_vars/hostname.yml`                                     |
+| 5️⃣        | **Playbook `vars:` block**              | Vars set directly inside the playbook                        |
+| 6️⃣        | **Playbook `vars_files:`**              | External files loaded using `vars_files`                     |
+| 7️⃣        | **Playbook `vars_prompt:`**             | User input at runtime                                        |
+| 8️⃣        | **Set in a task using `set_fact`**      | Runtime variable, higher precedence                          |
+| 9️⃣        | **Registered variables**                | Values returned from tasks                                   |
+| 🔟         | **Extra vars** (`-e`)                   | Highest priority — overrides everything else                 |
+
 # Tricky case
 
 In yaml files, we need to use double quetes `""` to wrap variables that directly follow collums `:` in order to say that it is ansible ref var, not yaml dictionary.
