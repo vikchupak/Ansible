@@ -120,7 +120,7 @@ Here, `community.general.s3` is a module from the `community.general` collection
 
 - https://galaxy.ansible.com/ui/
 
-Ansible Galaxy is a **community hub and repository** where you can find, download, and share Ansible content like roles, collections, and plugins.
+Ansible Galaxy is a **community hub and REPOSITORY** where you can find, download, and share Ansible content like roles, collections, and plugins.
 
 `ansible-galaxy` is a **command-line tool** that comes with Ansible, used to manage Ansible content from Ansible Galaxy.
 
