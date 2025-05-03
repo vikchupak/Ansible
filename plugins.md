@@ -1,3 +1,25 @@
+Ansible, plugins are pieces of code that add or extend functionality.
+
+### 🔌 **Ansible Plugins**:
+
+**Plugins** extend or customize **how Ansible behaves internally**, not what tasks it performs.
+
+* **Plugins don’t run directly in a playbook** — they hook into Ansible’s runtime.
+* Examples:
+
+  * `connection` plugins control **how Ansible connects** (SSH, WinRM, etc.)
+  * `callback` plugins control **how output is displayed**
+  * `inventory` plugins let you pull hosts from **dynamic sources**
+  * `filter` plugins let you **process data** in templates or variables
+
+> ✅ **Plugins add functionality to Ansible itself — its engine, execution flow, data handling, etc.**
+
+### 📌 Analogy:
+
+* **Plugins** = “How Ansible *works*” (behaviors and internals).
+
+---
+
 `env` plugin to read env vars
 - https://docs.ansible.com/ansible/latest/collections/ansible/builtin/env_lookup.html
 
