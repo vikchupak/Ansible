@@ -6,3 +6,8 @@
 
  Doc definition
  - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible
+
+---
+
+1. [Install](https://github.com/vikchupak/Ansible/blob/main/install.md)
+2. Inventory
