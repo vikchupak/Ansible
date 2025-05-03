@@ -3,7 +3,7 @@
 - `linux_user` or `linuxuser` - fine (letters, numbers, underscores)
 - `linux-user`, `linux.user`, `5linux_user` (number first), `linux user` - Won't work
 
-# Registered variables (module execution results)
+# Registered variables (`module execution results`)
 
 - Create variables from output of Ansible tasks (**output of module execution - return values**) using `regiter` attribute. These vars can be used in later tasks in your play. To print registered vars, use `debug` module.
 
