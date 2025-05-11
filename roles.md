@@ -5,6 +5,7 @@
   - So the roles are packaged to contain everything they need.
 - Extract tasks from different plays to reuse them in different playbooks/plays.
 - **Roles have standard defined structure**
+- **Roles can exist on their own or inside a collection**
 - Use existing Roles from community
   - From `ansible-galaxy`
   - From `git repositories`
