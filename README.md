@@ -15,4 +15,4 @@
 4. [Main concepts and Ad Hoc Tasks](https://github.com/vikchupak/Ansible/blob/main/mainConcepts.md) & [idempotency](https://github.com/vikchupak/Ansible/blob/main/Idempotency.md) & [state](https://github.com/vikchupak/Ansible/blob/main/state.md)
 5. [Collections and ansible-galaxy](https://github.com/vikchupak/Ansible/blob/main/modulesVsCollectionsVsPlugins.md)
 6. [async](https://github.com/vikchupak/Ansible/blob/main/async.md) & [registered and referencing variables](https://github.com/vikchupak/Ansible/blob/main/variables.md)
-7. [collections and modules](https://github.com/vikchupak/Ansible/blob/main/modulesVsCollectionsVsPlugins.md), [plugins](https://github.com/vikchupak/Ansible/blob/main/plugins.md), roles
+7. [collections and modules](https://github.com/vikchupak/Ansible/blob/main/modulesVsCollectionsVsPlugins.md), [plugins](https://github.com/vikchupak/Ansible/blob/main/plugins.md), [roles](https://github.com/vikchupak/Ansible/blob/main/roles.md)
