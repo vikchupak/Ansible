@@ -38,6 +38,8 @@ Here is the **official variable precedence hierarchy** from **lowest to highest*
 | 9️⃣        | **Registered variables**                | Values returned from tasks                                   |
 | 🔟         | **Extra vars** (`-e`)                   | Highest priority — overrides everything else                 |
 
+![image](https://github.com/user-attachments/assets/fc32ceef-f56d-4ae5-b83b-7392cd6bded6)
+
 # Tricky case
 
 In yaml files, we need to use double quetes `""` to wrap variables that directly follow collums `:` in order to say that it is ansible ref var, not yaml dictionary.
