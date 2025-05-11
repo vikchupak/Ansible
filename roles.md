@@ -129,7 +129,7 @@ In this example:
 - Variables in a role can be defined in:
   - `defaults/main.yml`: Lowest priority.
   - `vars/main.yml`: Higher priority.
-  - Playbook or inventory: Overrides role variables.
+  - **Playbook or inventory vars: Overrides role variables.** Vars defined inside a play accessible to its roles without extra imports.
 
 #### **Example of Default Variables:**
 ```yaml
