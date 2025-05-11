@@ -39,6 +39,7 @@ roles/
 - **`vars/`**:
   - Contains variables specific to the role (higher priority than `defaults`).
   - Example: `roles/my_role/vars/main.yml`
+  - **values here are specific to the role and will not be overridden by vars_files in a playbook**
 
 - **`tasks/`**:
   - Contains the main list of tasks to execute for the role.
